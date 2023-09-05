@@ -13,7 +13,9 @@ export const HW4 = () => {
   // - приложение должно компилироваться и запускаться в браузере
 
   const [currentText, setCurrentText] = useState("");
-  const [texts, setTexts] = useState<string[]>([]);
+  const [texts, setTexts] = useState<string[]>([
+    'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)'
+  ]);
 
   const handleSave = () => {
     setTexts([currentText, ...texts]);
